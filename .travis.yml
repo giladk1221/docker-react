@@ -7,4 +7,4 @@ before_install:
   - docker build -t giladk1221/docker-react -f Dockerfile.dev . 
 
 script:
-  - 
+  - docker run -e CI=true giladk1221/docker-react npm run test
